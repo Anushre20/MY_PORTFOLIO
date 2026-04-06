@@ -31,7 +31,7 @@ const HeroSection = () => {
   }, [text, isDeleting, roleIndex]);
 
   const buttons = [
-    { label: "Resume", icon: FileText, href: "#", variant: "primary" as const },
+    { label: "Resume", icon: FileText, href: "https://drive.google.com/file/d/1zRdNKvzNX8GewuJhLhqlZTz6XpyqNOoM/view?usp=sharing", variant: "primary" as const },
     { label: "GitHub", icon: Github, href: "https://github.com/Anushre20", variant: "secondary" as const },
     { label: "Codeolio", icon: ExternalLink, href: "https://codolio.com/profile/Anushri20", variant: "secondary" as const },
     { label: "Contact Me", icon: Mail, href: "#contact", variant: "primary" as const },
