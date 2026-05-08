@@ -1,11 +1,37 @@
 import { motion } from "framer-motion";
-import { Code, Database, Cpu, Wrench } from "lucide-react";
+import { Code, Wrench, Cpu, Database, Sparkles } from "lucide-react";
 
 const skillGroups = [
-  { title: "Languages", icon: Code, items: ["Python", "C++", "JavaScript", "SQL"] },
-  { title: "Tools", icon: Wrench, items: ["Git", "MySQL", "React", "Node.js"] },
-  { title: "Concepts", icon: Cpu, items: ["DSA", "OOP", "DBMS", "APIs"] },
-  { title: "Interests", icon: Database, items: ["Generative AI", "LLMs", "NLP", "Web Dev"] },
+  {
+    title: "Languages",
+    icon: Code,
+    items: ["Python", "C++", "JavaScript", "SQL"],
+  },
+  {
+    title: "Frontend",
+    icon: Wrench,
+    items: ["React.js", "TypeScript", "Tailwind CSS", "Vite"],
+  },
+  {
+    title: "Backend & Cloud",
+    icon: Database,
+    items: ["Node.js", "Supabase", "REST APIs", "MySQL"],
+  },
+  {
+    title: "Core Concepts",
+    icon: Cpu,
+    items: ["DSA", "OOP", "Authentication", "RBAC"],
+  },
+  {
+    title: "Tools",
+    icon: Wrench,
+    items: ["Git", "GitHub", "Vercel", "Render"],
+  },
+  {
+    title: "Interests",
+    icon: Sparkles,
+    items: ["Generative AI", "LLMs", "Full Stack Dev", "Software Development"],
+  },
 ];
 
 const fadeUp = {

@@ -4,22 +4,34 @@ import { Github, ExternalLink, Star } from "lucide-react";
 const projects = [
   {
     title: "BeforeYouEat",
-    description: "AI-powered food awareness platform that helps users understand what's in their food before they consume it.",
+    description:
+      "AI-powered food awareness platform that helps users understand what's in their food before they consume it.",
     tech: ["React", "TypeScript", "APIs"],
     github: "https://github.com/Anushre20/BeforeYouEat",
     live: "https://before-you-eat.vercel.app",
     featured: true,
   },
   {
+    title: "SeeYouThere",
+    description:
+      "Full-stack campus event management platform for IGDTUW featuring role-based dashboards, dynamic society pages, event registrations, achievements, gallery uploads, and real-time organizer controls.",
+    tech: ["React", "TypeScript", "Supabase", "Tailwind CSS"],
+    github: "https://github.com/Anushre20/SeeYouThere",
+    live: "https://campus-event-management-theta.vercel.app/",
+    featured: true,
+  },
+  {
     title: "MannMitra",
-    description: "Emotion-aware AI chatbot for mental health support using sentiment analysis and conversational AI.",
+    description:
+      "Emotion-aware AI chatbot for mental health support using sentiment analysis and conversational AI.",
     tech: ["Gemini API", "HuggingFace", "Flask"],
     github: "https://github.com/anoushka1405/MannMitra-new",
     featured: false,
   },
   {
     title: "AI Quiz Generator",
-    description: "Platform that automatically generates quizzes from text or PDF documents using LLM APIs.",
+    description:
+      "Platform that automatically generates quizzes from text or PDF documents using LLM APIs.",
     tech: ["React", "Node.js", "MySQL", "LLM APIs"],
     github: "https://github.com/Anushre20/intelliquiz",
     featured: false,
