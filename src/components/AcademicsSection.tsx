@@ -5,6 +5,7 @@ const data = [
   { semester: "Sem 1", sgpa: 8.24 },
   { semester: "Sem 2", sgpa: 8.29 },
   { semester: "Sem 3", sgpa: 9.18 },
+  { semester: "Sem 4", sgpa: 9.82 },
 ];
 
 const AcademicsSection = () => (
