@@ -1,11 +1,16 @@
 import { motion } from "framer-motion";
-import { Code, Wrench, Cpu, Database, Sparkles } from "lucide-react";
+import { Code, Wrench, Cpu, Database, Sparkles, Brain } from "lucide-react";
 
 const skillGroups = [
   {
     title: "Languages",
     icon: Code,
     items: ["Python", "C++", "JavaScript", "SQL"],
+  },
+  {
+    title: "AI / ML",
+    icon: Brain,
+    items: ["Scikit-learn", "Gradient Boosting", "DBSCAN", "RAG", "Prompt Engineering", "Agentic AI", "Semantic Search", "Hugging Face"],
   },
   {
     title: "Frontend",
@@ -15,7 +20,7 @@ const skillGroups = [
   {
     title: "Backend & Cloud",
     icon: Database,
-    items: ["Node.js", "Supabase", "REST APIs", "MySQL"],
+    items: ["Node.js", "Express.js", "FastAPI", "Flask", "LangChain", "Supabase", "REST APIs", "MySQL"],
   },
   {
     title: "Core Concepts",
@@ -25,7 +30,7 @@ const skillGroups = [
   {
     title: "Tools",
     icon: Wrench,
-    items: ["Git", "GitHub", "Vercel", "Render"],
+    items: ["Git", "GitHub", "Vercel", "Render", "FAISS", "Sentence Transformers", "Tavily API", "OSRM", "Power BI"],
   },
   {
     title: "Interests",
@@ -56,8 +61,9 @@ const AboutSection = () => (
         <p className="text-muted-foreground max-w-2xl leading-relaxed">
           I'm a B.Tech student in AI & ML at IGDTUW, New Delhi, with a strong foundation
           in Data Structures, Object-Oriented Programming, and Database Management Systems.
-          I'm passionate about Generative AI, Large Language Models, and building intelligent
-          systems that create real-world impact.
+          I'm passionate about Generative AI, Large Language Models, Retrieval-Augmented
+          Generation (RAG), semantic search, and building intelligent systems that create
+          real-world impact.
         </p>
       </motion.div>
 

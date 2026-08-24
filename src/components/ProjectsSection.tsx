@@ -1,7 +1,34 @@
 import { motion } from "framer-motion";
 import { Github, ExternalLink, Star } from "lucide-react";
 
-const projects = [
+type Project = {
+  title: string;
+  description: string;
+  tech: string[];
+  github: string;
+  live?: string;
+  featured: boolean;
+  status?: string;
+};
+
+const projects: Project[] = [
+  {
+    title: "InterviewIQ",
+    description:
+      "AI-powered company-specific interview preparation system using RAG, semantic search, LLMs, and live web evidence to generate tailored interview roadmaps, technical topics, and preparation insights. Features FAISS + Sentence Transformers retrieval with metadata filtering and Tavily web retrieval for evidence-grounded responses.",
+    tech: ["RAG", "FAISS", "Sentence Transformers", "Tavily API", "LLMs", "React", "TypeScript", "FastAPI"],
+    github: "https://github.com/Anushre20/AI-Company-Specific-Interview-Preparation-System",
+    featured: true,
+    status: "Ongoing",
+  },
+  {
+    title: "AI Traffic Risk & Safe Route Recommendation",
+    description:
+      "Route recommendation system combining Gradient Boosting, DBSCAN hotspot detection, historical accident data, weather analysis, and route optimization. Built on a three-tier architecture with per-segment risk scoring.",
+    tech: ["Gradient Boosting", "DBSCAN", "scikit-learn", "FastAPI", "Express.js", "React", "OSRM", "OpenWeatherMap"],
+    github: "https://github.com/Anushre20/Anupama_anveshan-ML-GenAIwithPython",
+    featured: true,
+  },
   {
     title: "BeforeYouEat",
     description:
@@ -67,10 +94,19 @@ const ProjectsSection = () => (
               p.featured ? "md:col-span-2 lg:col-span-1 ring-1 ring-primary/20" : ""
             }`}
           >
-            {p.featured && (
-              <div className="flex items-center gap-1.5 mb-3">
-                <Star size={14} className="text-primary fill-primary" />
-                <span className="text-xs font-medium text-primary code-font">Featured</span>
+            {(p.featured || p.status) && (
+              <div className="flex items-center gap-2 mb-3 flex-wrap">
+                {p.featured && (
+                  <>
+                    <Star size={14} className="text-primary fill-primary" />
+                    <span className="text-xs font-medium text-primary code-font">Featured</span>
+                  </>
+                )}
+                {p.status && (
+                  <span className="text-xs px-2 py-0.5 rounded-md bg-accent/10 text-accent code-font">
+                    {p.status}
+                  </span>
+                )}
               </div>
             )}
             <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors">

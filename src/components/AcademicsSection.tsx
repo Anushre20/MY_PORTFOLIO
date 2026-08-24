@@ -31,6 +31,18 @@ const AcademicsSection = () => (
         transition={{ duration: 0.6 }}
         className="glass-card rounded-xl p-6 sm:p-8"
       >
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-6">
+          <div>
+            <h3 className="font-bold text-lg">B.Tech — Artificial Intelligence &amp; Machine Learning</h3>
+            <p className="text-sm text-muted-foreground">
+              Indira Gandhi Delhi Technical University for Women (IGDTUW), New Delhi · Jul 2024 – Jun 2028
+            </p>
+          </div>
+          <div className="text-left sm:text-right">
+            <p className="text-2xl font-bold gradient-text code-font">8.89</p>
+            <p className="text-xs text-muted-foreground">CGPA</p>
+          </div>
+        </div>
         <div className="h-72">
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={data} margin={{ top: 10, right: 30, left: 0, bottom: 10 }}>
